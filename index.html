@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://imneverdied.github.io/JS/XML2JSON.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+</head>
+
+<body onload="TIME()">
+  <h1>Jquery Get / Post - google sheet</h1>
+  <label id="DT_NOW">+</label>
+  <br>
+  <!-- <label>帳號:</label>
+    <input id="ACCT" /> -->
+  <label>ID:</label>
+  <input id="INPUT_ID" />
+  <label>NAME:</label>
+  <input id="INPUT_NAME" />
+  <label>PATH:</label>
+  <input id="INPUT_PATH" />
+  <label>whereID:</label>
+  <input id="INPUT_whereID" />
+  <table>
+    <tr>
+      <td><label>T-SQL</label></td>
+      <td>回應XML</td>
+      <td>google sheet</td>
+    </tr>
+    <tr>
+      <td>
+        <label><textarea id="T_SQL" cols="30" rows="10"></textarea></label>
+      </td>
+      <td><textarea id="REXML" cols="30" rows="10"></textarea></td>
+      <td><label id="TEST"></label></td>
+    </tr>
+  </table>
+
+  <button id="button" onclick="post()">insert</button>
+  <button onclick="GET_1()">query</button>
+  <button onclick="SQL_GET()">TSQL query</button>
+  <button onclick="update()">update</button>
+</body>
+
+</html>
+
+<script>
+  function GET_1() {
+    let AA = $(ACCT).val();
+    GET();
+    // if (AA != 'fydra') {
+    //   alert('帳號錯誤');
+    // } else if (AA == 'fydra') {
+    //   POST();
+    // }
+  }
+</script>
